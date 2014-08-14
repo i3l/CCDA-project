@@ -22,7 +22,14 @@
  *
  * @author:	Sungwoo Han
  *
- * @version	1.0
+ * @version	1.0.1
+ * 
+ * History:
+ *   version 1.0.1 - Allergy effectiveTime low handles correctly for UNK when stop date
+ *                   is current. 
+ *                   At Vital Sign, comment changed. SNOMED -CT is changed to SNOMED CT
+ *                   - by Myung Choi
+ *   version 1.0 - initial code.
  *******************************************************************************/
 
 package edu.gatech.i3l.mdht.ccdagen;
@@ -573,8 +580,15 @@ public class Main {
 					IVL_TS effectiveTime_entAlg = DatatypesFactory.eINSTANCE.createIVL_TS();
 
 					IVXB_TS effectiveTimeLow_entAlg = DatatypesFactory.eINSTANCE.createIVXB_TS();
-					effectiveTimeLow_entAlg.setValue(readAlg.getStart_date().get(i));
-
+					
+					// Allergy is current. However, there is a case that we don't know 
+					// when it started. In this case, start date will be UNK. We need to take
+					// care of this case.
+					if (readAlg.getStart_date().get(i).toUpperCase().startsWith("UNK")) {
+						effectiveTimeLow_entAlg.setNullFlavor(NullFlavor.UNK);
+					} else {
+						effectiveTimeLow_entAlg.setValue(readAlg.getStart_date().get(i));
+					}
 					effectiveTime_entAlg.setLow(effectiveTimeLow_entAlg);
 
 					act_alg1.setEffectiveTime(effectiveTime_entAlg);
@@ -1500,7 +1514,7 @@ public class Main {
 		}
 
 		// **********************************************************************************************************
-		// Social History
+		// Vital Sign
 		// **********************************************************************************************************
 
 		Section section_vitalSigns = CDAFactory.eINSTANCE.createSection();
@@ -1571,7 +1585,7 @@ public class Main {
 			// ID and Extension!!!
 
 			CD code_vitalOrg1 = DatatypesFactory.eINSTANCE.createCD(
-				"46680005", "2.16.840.1.113883.6.96", "SNOMED -CT", "Vital signs");
+				"46680005", "2.16.840.1.113883.6.96", "SNOMED CT", "Vital signs");
 			org_vitals.setCode(code_vitalOrg1);
 
 			CS StatusCode_vitalOrg1 = DatatypesFactory.eINSTANCE.createCS("completed");

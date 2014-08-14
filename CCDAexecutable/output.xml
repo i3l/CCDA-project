@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <id root="1.1.1.1.1.1.1.1.1" extension="Test CCDA"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
+  <title>Community Health and Hospitals: Health Summary(Example)</title>
+  <effectiveTime value="20140701000000-0000"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.4.1" extension="123-456-7890"/>
+      <addr use="HP"><streetAddressLine>1221 Middle Street</streetAddressLine><city>Atlanta</city><state>GA</state><country>US</country><postalCode>30308</postalCode></addr>
+      <telecom value="tel:404-341-5645" use="HP"/>
+      <patient>
+        <name><given>Marla</given><family>Dixon</family><suffix>M</suffix></name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19520214"/>
+        <raceCode code="raceCode" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="White"/>
+        <ethnicGroupCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="Not Hispanic or Latino"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20140101000000+0500"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="111111"/>
+      <addr><streetAddressLine>760 Spring St.</streetAddressLine><city>Atlanta</city><state>Georgia</state><postalCode>30308</postalCode><country>US</country></addr>
+      <telecom value="tel:404-385-3448" use="WP"/>
+      <assignedPerson>
+        <name><prefix>Dr</prefix><given>Ed</given><family>Johnson</family></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.4.6" extension="99999999"/>
+        <name>Marla M Dixon</name>
+        <telecom value="tel:404-341-5645" use="WP"/>
+        <addr><streetAddressLine>1221 Middle Street</streetAddressLine><city>Atlanta</city><state>GA</state><postalCode>30308</postalCode><country>US</country></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf typeCode="DOC">
+    <serviceEvent>
+      <code code="99213" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Evaluation and Management"/>
+      <effectiveTime>
+        <low value="20060828"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PP" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role" displayName="Primary Care Provider"/>
+        <assignedEntity>
+          <id root="2.16.840.1.113883.3.2853" extension="PP-1"/>
+          <code code="208D00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="General Practice"/>
+          <addr><streetAddressLine>760 Spring St.</streetAddressLine><city>Atlanta</city><state>GA</state><postalCode>30308</postalCode><country>US</country></addr>
+          <telecom value="tel:404-385-3448" use="WP"/>
+          <assignedPerson>
+            <name><prefix>Dr</prefix><given>Ed</given><family>Johnson</family></name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="2.16.840.1.113883.3.2853" extension="1"/>
+      <code code="99213" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Evaluation and Management"/>
+      <effectiveTime value="20060828"/>
+      <responsibleParty>
+        <assignedEntity>
+          <id root="2.16.840.1.113883.4.6"/>
+          <assignedPerson>
+            <name><given>Ed</given><family>Johnson</family><prefix>Dr</prefix></name>
+          </assignedPerson>
+        </assignedEntity>
+      </responsibleParty>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>ALLERGIES, ADVERSE REACTIONS, ALERTS</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Substance</th>
+                               <th>Reaction</th>
+                               <th>Severity</th>
+                               <th>Status</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td><content ID="substance1">Amoxicillin</content></td>
+                               <td>Hay fever with asthma</td>
+                               <td><content ID="severity1">Moderate to severe</content></td>
+                               <td>Active</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="substance2">Penicillin G benzathine</content></td>
+                               <td>Hives</td>
+                               <td><content ID="severity2">Moderate to severe</content></td>
+                               <td>Inactive</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="dca3b22d-6d5e-459e-b968-d87a52279a8d"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="UNK"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="dbf127a8-196b-46c1-8fb0-1d06f0bbd13d"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="UNK"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Drug allergy">
+                    <originalText><reference value="#reaction1"/></originalText>
+                  </value>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="205734" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Amoxicillin">
+                          <originalText><reference value="#substance1"/></originalText>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="1f3d7158-9225-4efd-baaf-4c6e521723f8"/>
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="233683003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hay fever with asthma"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <code xsi:type="CE" code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity Observation"/>
+                      <text><reference value="#severity1"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="371924009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Moderate to severe"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <id root="1dda65bd-ed82-4f12-a04d-06cf13452470"/>
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20070501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <id root="da29252a-33e8-4c6e-b8d3-1b1b885915a1"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20070501"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Drug allergy">
+                    <originalText><reference value="#reaction2"/></originalText>
+                  </value>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code code="7982" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Penicillin G benzathine">
+                          <originalText><reference value="#substance2"/></originalText>
+                        </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                      <id root="671fb120-4901-43cb-936e-708a9a3545eb"/>
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hives"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <code xsi:type="CE" code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity Observation"/>
+                      <text><reference value="#severity2"/></text>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="371924009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Moderate to severe"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Visit Date</th>
+                               <th>Chief Complaint</th>
+                               <th>Diagnosis</th>
+                               <th>ICD-9</th>
+                               <th>Height</th>
+                               <th>Weight</th>
+                               <th>Pulse</th>
+                               <th>Respiration</th>
+                               <th>Blood Pressure</th>
+                               <th>Notes</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td><content ID="Encounter1"/>20110423</td>
+                               <td>Annual Physical Exam</td>
+                               <td>Essential Hypertension</td>
+                               <td>401.9</td>
+                               <td>68 inches</td>
+                               <td>185</td>
+                               <td>78</td>
+                               <td>32</td>
+                               <td>160/95</td>
+                               <td>59 YO white female with a 15 year history of diabetes and a 10 year history of hypertension.  Has early coronary artery disease and COPD. Not well controlled on Furosemide and Propranolol.  Will increase doses and council on weight reduction, exercise and diet.</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="Encounter2"/>20120425</td>
+                               <td>Annual Physical Exam</td>
+                               <td>Essential Hypertension</td>
+                               <td>401.9</td>
+                               <td>68 inches</td>
+                               <td>190</td>
+                               <td>82</td>
+                               <td>33</td>
+                               <td>145/88</td>
+                               <td>60 YO white female with a 11 year history of hypertension.  Improved control on current levels of Furosemide and Propranolol.  Will increase Furosemide dose and council on weight reduction, exercise and diet.</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="Encounter3"/>20130426</td>
+                               <td>Annual Physical Exam</td>
+                               <td>Essential Hypertension</td>
+                               <td>401.9</td>
+                               <td>68inches</td>
+                               <td>195</td>
+                               <td>88</td>
+                               <td>42</td>
+                               <td>140/78</td>
+                               <td>62 YO white female with a 12 year history of hypertension.  Reasonable control on current levels of Furosemide and Propranolol.  Concerned about reduced pulmonary function.  Will refer to Dr. Jones for further evaulation.</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <id root="055346e1-2a39-4652-9336-6fe1fa7e153b"/>
+              <code code="99241" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" codeSystemVersion="4" displayName="Annual Physical Exam">
+                <originalText>Checkup Examination<reference value="#Encounter1"/></originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110423"/>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <id root="22691cd6-763a-420d-84e8-71b02005e241"/>
+              <code code="99241" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" codeSystemVersion="4" displayName="Annual Physical Exam">
+                <originalText>Checkup Examination<reference value="#Encounter2"/></originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120425"/>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <id root="1a5fc83c-a329-441b-8189-7c03e3d7ba60"/>
+              <code code="99241" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" codeSystemVersion="4" displayName="Annual Physical Exam">
+                <originalText>Checkup Examination<reference value="#Encounter3"/></originalText>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20130426"/>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>IMMUNIZATIONS</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Vaccine</th>
+                               <th>Date</th>
+                               <th>status</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td><content ID="immun1">Influenza virus vaccine</content></td>
+                               <td>20110423</td>
+                               <td>completed</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="immun2">Tetanus and diphtheria toxoids - preservative free</content></td>
+                               <td>20110423</td>
+                               <td>completed</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="c690c9bf-27fd-4a23-a056-6c27de63c947"/>
+              <text><reference value="#immun1"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20110423"/>
+              <doseQuantity value="50" unit="mcg"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <manufacturedMaterial>
+                    <code code="111" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="Influenza virus vaccine">
+                      <originalText>Influenza virus vaccine</originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <id root="d1ebecd7-3382-4a32-b6d2-b7583005da92"/>
+              <text><reference value="#immun2"/></text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS" value="20110423"/>
+              <doseQuantity value="50" unit="mcg"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <manufacturedMaterial>
+                    <code code="113" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="Tetanus and diphtheria toxoids - preservative free">
+                      <originalText>Tetanus and diphtheria toxoids - preservative free</originalText>
+                      <translation code="9" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="Tetanus and diphtheria toxoids - preservative free"/>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
+          <title>Medications</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Start Date</th>
+                               <th>Stop Date</th>
+                               <th>Drug</th>
+                               <th>Route</th>
+                               <th>Type</th>
+                               <th>sig</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>20110423</td>
+                               <td>20120423</td>
+                               <td><content ID="Medication1">Furosemide 40 MG Oral Tablet [Lasix]</content></td>
+                               <td>Oral</td>
+                               <td>Tablet</td>
+                               <td>1 tablet at bedtime</td>
+                          </tr>
+                          <tr>
+                               <td>20110423</td>
+                               <td>20120423</td>
+                               <td><content ID="Medication2">24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal]</content></td>
+                               <td>Oral</td>
+                               <td>Tablet</td>
+                               <td>1 tablet each morning</td>
+                          </tr>
+                          <tr>
+                               <td>20120425</td>
+                               <td>20130425</td>
+                               <td><content ID="Medication3">Furosemide 40 MG Oral Tablet [Lasix]</content></td>
+                               <td>Oral</td>
+                               <td>Tablet</td>
+                               <td>1 tablet each morning and at bedtime</td>
+                          </tr>
+                          <tr>
+                               <td>20120425</td>
+                               <td>20130425</td>
+                               <td><content ID="Medication4">24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal]</content></td>
+                               <td>Oral</td>
+                               <td>Tablet</td>
+                               <td>1 tablet each morning</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="20bc2c2a-1e9e-41bb-8259-e77a0d5832ae"/>
+              <text><reference value="#Medication1"/>Furosemide 40 MG Oral Tablet [Lasix], 1 tablet at bedtime</text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20110423"/>
+                <high value="20120423"/>
+              </effectiveTime>
+              <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+              <doseQuantity value="1"/>
+              <rateQuantity value="1" unit="d"/>
+              <administrationUnitCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Tablet"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial>
+                    <code code="200809" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Furosemide 40 MG Oral Tablet [Lasix]">
+                      <originalText><reference value="#medication1"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="bd19dc55-511d-4db7-abee-b3b3a59fb1f9"/>
+              <text><reference value="#Medication2"/>24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal], 1 tablet each morning</text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20110423"/>
+                <high value="20120423"/>
+              </effectiveTime>
+              <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+              <doseQuantity value="1"/>
+              <rateQuantity value="1" unit="d"/>
+              <administrationUnitCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Tablet"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial>
+                    <code code="857537" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal]">
+                      <originalText><reference value="#medication2"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="6c7ea532-a9e7-47bc-a01b-47b4bbcb2c57"/>
+              <text><reference value="#Medication3"/>Furosemide 40 MG Oral Tablet [Lasix], 1 tablet each morning and at bedtime</text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120425"/>
+                <high value="20130425"/>
+              </effectiveTime>
+              <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+              <doseQuantity value="1"/>
+              <rateQuantity value="1" unit="d"/>
+              <administrationUnitCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Tablet"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial>
+                    <code code="200809" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Furosemide 40 MG Oral Tablet [Lasix]">
+                      <originalText><reference value="#medication3"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="6a00a620-c0c1-428a-b003-3df8f7d096d6"/>
+              <text><reference value="#Medication4"/>24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal], 1 tablet each morning</text>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120425"/>
+                <high value="20130425"/>
+              </effectiveTime>
+              <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+              <doseQuantity value="1"/>
+              <rateQuantity value="1" unit="d"/>
+              <administrationUnitCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Tablet"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                  <manufacturedMaterial>
+                    <code code="857537" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="24 HR Propranolol Hydrochloride 60 MG Extended Release Oral Capsule [Inderal]">
+                      <originalText><reference value="#medication4"/></originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
+          <title>PROBLEMS</title>
+          <text><content ID="problems"/>
+                 <list listType="ordered">
+                     <item><content ID="problem1">Diabetes Mellitus</content></item>
+                     <item><content ID="problem2">Essential Hyptertension</content></item>
+                     <item><content ID="problem3">Simple chronic bronchitis</content></item>
+                     <item><content ID="problem4">Coronary artery disease</content></item>
+                 </list>
+</text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="652c53e2-cf43-4bfc-9e36-d881c4d37cc2"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="9f13be02-49ad-4ad9-b4af-eaf15fb1d8d3"/>
+                  <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+                  <text><reference value="#problem1"/></text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="987654321" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diabetes Mellitus"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="1ba2736c-baf7-447d-8582-8079f550cd7c"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="0bf8ce1f-7c21-4ec1-ba88-43304cd07176"/>
+                  <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+                  <text><reference value="#problem2"/></text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="371125006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Essential Hyptertension"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="2f349936-f650-4f7c-8748-a4f32eae6e2f"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="60604331-3176-4612-9c64-a19115b261ad"/>
+                  <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+                  <text><reference value="#problem3"/></text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="61937009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Simple chronic bronchitis"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+              <id root="35d967aa-944c-43d3-996e-eb1d192458dd"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20050501"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <id root="1163e812-b362-49cc-8161-ce0f6d384fed"/>
+                  <code code="409586006" codeSystem="2.16.840.1.113883.6.96" displayName="Complaint"/>
+                  <text><reference value="#problem4"/></text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="371915000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Coronary artery disease"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RESULTS"/>
+          <title>RESULTS</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Visit Date</th>
+                               <th>Test</th>
+                               <th>LOINC</th>
+                               <th>Value</th>
+                               <th>unit</th>
+                               <th>Short Name</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td><content ID="result1"/>20110423</td>
+                               <td>Hemoglobin</td>
+                               <td>4635-9 </td>
+                               <td>12.5</td>
+                               <td>g/dl</td>
+                               <td>Serum Hemoglobin</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result2"/>20110423</td>
+                               <td>Hematocrit</td>
+                               <td>20570-8 </td>
+                               <td>40</td>
+                               <td>%</td>
+                               <td>Hematocrit</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result3"/>20110423</td>
+                               <td>RBC</td>
+                               <td>789-8</td>
+                               <td>4.2</td>
+                               <td>10*6/uL</td>
+                               <td>Red Blood Count</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result4"/>20110423</td>
+                               <td>Serum Sodium</td>
+                               <td>24326-1</td>
+                               <td>137</td>
+                               <td>mEq/L </td>
+                               <td>Serum Sodium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result5"/>20110423</td>
+                               <td>Serum Potassium</td>
+                               <td>24326-1</td>
+                               <td>3.4</td>
+                               <td>mEq/L </td>
+                               <td>Serum Potassium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result6"/>20110423</td>
+                               <td>Serum Chloride</td>
+                               <td>24326-1</td>
+                               <td>98</td>
+                               <td>mEq/L </td>
+                               <td>Serum Chloride</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result7"/>20110423</td>
+                               <td>Chest X-ray</td>
+                               <td>42100-7</td>
+                               <td>Mild LV enlargement</td>
+                               <td>text</td>
+                               <td>AP and PA Chest X-ray</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result8"/>20110423</td>
+                               <td>ECG</td>
+                               <td>8601-7</td>
+                               <td>Possible early LVH</td>
+                               <td>text</td>
+                               <td>EKG</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result9"/>20110423</td>
+                               <td>Pulse Ox</td>
+                               <td>59408-5</td>
+                               <td>92</td>
+                               <td>%</td>
+                               <td>Pulse Oxygen</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result10"/>20110425</td>
+                               <td>Hemoglobin</td>
+                               <td>4635-9 </td>
+                               <td>13</td>
+                               <td>g/dl</td>
+                               <td>Serum Hemoglobin</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result11"/>20110425</td>
+                               <td>Hematocrit</td>
+                               <td>20570-8 </td>
+                               <td>40</td>
+                               <td>%</td>
+                               <td>Hematocrit</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result12"/>20110425</td>
+                               <td>RBC</td>
+                               <td>789-8</td>
+                               <td>4.4</td>
+                               <td>10*6/uL</td>
+                               <td>Red Blood Count</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result13"/>20110425</td>
+                               <td>Serum Sodium</td>
+                               <td>24326-1</td>
+                               <td>132</td>
+                               <td>mEq/L </td>
+                               <td>Serum Sodium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result14"/>20110425</td>
+                               <td>Serum Potassium</td>
+                               <td>24326-1</td>
+                               <td>3.2</td>
+                               <td>mEq/L </td>
+                               <td>Serum Potassium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result15"/>20110425</td>
+                               <td>Serum Chloride</td>
+                               <td>24326-1</td>
+                               <td>92</td>
+                               <td>mEq/L </td>
+                               <td>Serum Chloride</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result16"/>20110425</td>
+                               <td>Chest X-ray</td>
+                               <td>42100-7</td>
+                               <td>Mild LV enlargement</td>
+                               <td>text</td>
+                               <td>AP and PA Chest X-ray</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result17"/>20110425</td>
+                               <td>ECG</td>
+                               <td>8601-7</td>
+                               <td>Possible early LVH</td>
+                               <td>text</td>
+                               <td>EKG</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result18"/>20110425</td>
+                               <td>Pulse Ox</td>
+                               <td>59408-5</td>
+                               <td>90</td>
+                               <td>%</td>
+                               <td>Pulse Oxygen</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result19"/>20130426</td>
+                               <td>Hemoglobin</td>
+                               <td>4635-9 </td>
+                               <td>13</td>
+                               <td>g/dl</td>
+                               <td>Serum Hemoglobin</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result20"/>20130426</td>
+                               <td>Hematocrit</td>
+                               <td>20570-8 </td>
+                               <td>40</td>
+                               <td>%</td>
+                               <td>Hematocrit</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result21"/>20130426</td>
+                               <td>RBC</td>
+                               <td>789-8</td>
+                               <td>4.3</td>
+                               <td>10*6/uL</td>
+                               <td>Red Blood Count</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result22"/>20130426</td>
+                               <td>Serum Sodium</td>
+                               <td>24326-1</td>
+                               <td>130</td>
+                               <td>mEq/L </td>
+                               <td>Serum Sodium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result23"/>20130426</td>
+                               <td>Serum Potassium</td>
+                               <td>24326-1</td>
+                               <td>3.4</td>
+                               <td>mEq/L </td>
+                               <td>Serum Potassium</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result24"/>20130426</td>
+                               <td>Serum Chloride</td>
+                               <td>24326-1</td>
+                               <td>88</td>
+                               <td>mEq/L </td>
+                               <td>Serum Chloride</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result25"/>20130426</td>
+                               <td>Chest X-ray</td>
+                               <td>42100-7</td>
+                               <td>Mild-moderate LV enlargement</td>
+                               <td>text</td>
+                               <td>AP and PA Chest X-ray</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result26"/>20130426</td>
+                               <td>ECG</td>
+                               <td>8601-7</td>
+                               <td>Early LVH</td>
+                               <td>text</td>
+                               <td>EKG</td>
+                          </tr>
+                          <tr>
+                               <td><content ID="result27"/>20130426</td>
+                               <td>Pulse Ox</td>
+                               <td>59408-5</td>
+                               <td>84</td>
+                               <td>%</td>
+                               <td>Pulse Oxygen</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="2433f14a-3355-40c5-9661-f6c3e07f2d80"/>
+              <code code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="43faf7de-809e-4d6f-be02-eb7069d5df1c"/>
+                  <code xsi:type="CE" code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+                  <text><reference value="#result1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="12.5" unit="g/dl"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="30763b28-b44f-40a5-be2c-ddcba0840ad9"/>
+              <code code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="09ebea2d-397b-4ff3-989e-6b2921b620e8"/>
+                  <code xsi:type="CE" code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+                  <text><reference value="#result2"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="40.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="39010eaa-39a0-411e-8e4a-53c6a7667408"/>
+              <code code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="58531588-83c6-44f1-a70a-13ca1a98f5c1"/>
+                  <code xsi:type="CE" code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+                  <text><reference value="#result3"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="4.2" unit="10*6/uL"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="dfd00348-f490-498b-b6f9-d153c60cc54b"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="22d357a3-e0b7-461d-8c95-d96f297bacc1"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+                  <text><reference value="#result4"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="137.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="7acb2461-490c-4dba-921a-a2c726fc3b64"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="2c993eea-a8e6-4109-9cb5-402e24cc9b9a"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+                  <text><reference value="#result5"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="3.4" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="952d02a0-829e-4790-b407-12ab84ed1aad"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="0410214b-d5bd-4a25-9a22-4752b65f849a"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+                  <text><reference value="#result6"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="98.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="63e8fb1e-1c68-4faa-8f65-3d45d7181d24"/>
+              <code code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="25ce1120-508a-47fe-9ba5-d39f9dc432ae"/>
+                  <code xsi:type="CE" code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+                  <text><reference value="#result7"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="ST">Mild LV enlargement</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="e43a51d8-2cf4-487c-91c5-6c094eb43d33"/>
+              <code code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="239eea7f-68de-46cc-9897-e6b8fed62f40"/>
+                  <code xsi:type="CE" code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+                  <text><reference value="#result8"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="ST">Possible early LVH</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="70a39b1a-d96c-45f3-8e6e-7b4645328201"/>
+              <code code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="ffbb1e86-b50d-48f8-a90b-805e99c30a35"/>
+                  <code xsi:type="CE" code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+                  <text><reference value="#result9"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110423"/>
+                  <value xsi:type="PQ" value="92.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="e93da623-7600-4b35-9d62-bf9214801478"/>
+              <code code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="ce48851d-d866-41ce-aea3-6912a24a62b9"/>
+                  <code xsi:type="CE" code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+                  <text><reference value="#result10"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="13.0" unit="g/dl"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="f97e6af7-d1c5-45b0-bbf9-85a0cd199950"/>
+              <code code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="a8d2aed2-5cb4-4626-a8e5-e8ec4d6b3c72"/>
+                  <code xsi:type="CE" code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+                  <text><reference value="#result11"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="40.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="6a8bd5d2-6cf2-4631-8238-1c02fc3489de"/>
+              <code code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="459e5870-b958-4616-8e36-65bbb4e7cf10"/>
+                  <code xsi:type="CE" code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+                  <text><reference value="#result12"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="4.4" unit="10*6/uL"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="1043b2eb-3ca5-482a-ab07-5823b6e641d2"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="04216304-424f-4499-a81e-c5ea5888c55b"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+                  <text><reference value="#result13"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="132.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="ca4dcb4d-c8c7-4e69-ab78-3dc99c21da36"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="f6aee8ee-ee8f-4cea-a276-7b8f4f65152a"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+                  <text><reference value="#result14"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="3.2" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="a674576e-293e-42de-b380-0b02bb8fd06f"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="61b6f83b-b0b0-4886-85ec-e19fccbbf3d6"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+                  <text><reference value="#result15"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="92.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="0694d5ee-8783-4c28-a405-0bc82a756479"/>
+              <code code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="152d1691-9214-4604-aaf9-641e99302cb9"/>
+                  <code xsi:type="CE" code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+                  <text><reference value="#result16"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="ST">Mild LV enlargement</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="d9afedc3-1e37-41a6-ad72-308094ccba46"/>
+              <code code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="406b6b81-2258-47e9-b4c8-5e65d0ccba40"/>
+                  <code xsi:type="CE" code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+                  <text><reference value="#result17"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="ST">Possible early LVH</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="01642746-7650-488b-a747-edd9b2418ac7"/>
+              <code code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="b30df30e-52c9-4192-9594-dd26b1918590"/>
+                  <code xsi:type="CE" code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+                  <text><reference value="#result18"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110425"/>
+                  <value xsi:type="PQ" value="90.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="4d4b3370-9a98-48bf-8633-7f7de0881db1"/>
+              <code code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="37b43789-a4ee-47c2-aabf-5d3f76484490"/>
+                  <code xsi:type="CE" code="4635-9 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemoglobin"/>
+                  <text><reference value="#result19"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="13.0" unit="g/dl"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="93444566-3698-48c4-8080-06e4d5fb426d"/>
+              <code code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="55854ff8-b5a6-4d6f-ab94-de56a2783b79"/>
+                  <code xsi:type="CE" code="20570-8 " codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hematocrit"/>
+                  <text><reference value="#result20"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="40.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="cfddfa8c-0602-4a3f-89a6-5d2f50cfbeaa"/>
+              <code code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="921e56c2-8b46-4abb-a906-f14635bddded"/>
+                  <code xsi:type="CE" code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC"/>
+                  <text><reference value="#result21"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="4.3" unit="10*6/uL"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="4e264f6c-d3a8-48a7-b0b0-70e1fc7e25e2"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="b50b4ae8-e79b-487a-b9cd-615dcd499bb8"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Sodium"/>
+                  <text><reference value="#result22"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="130.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="199ee6a0-d0dd-4695-8838-2c60675a4aaf"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="c6265458-1c40-425b-89d5-333574a755db"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Potassium"/>
+                  <text><reference value="#result23"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="3.4" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="a9b1c809-1987-40e2-b1ca-6a003159c969"/>
+              <code code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="5d2923e0-ea7c-43dd-8100-b612a3284300"/>
+                  <code xsi:type="CE" code="24326-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Serum Chloride"/>
+                  <text><reference value="#result24"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="88.0" unit="mEq/L "/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="f0602134-aac4-4af9-bdbc-43c84338e67c"/>
+              <code code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="f1107168-ae15-4762-9b9e-77c31fe15a28"/>
+                  <code xsi:type="CE" code="42100-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chest X-ray"/>
+                  <text><reference value="#result25"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="ST">Mild-moderate LV enlargement</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="cea3ed32-d719-4931-bcb1-8a7feeb3f425"/>
+              <code code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="0f1522d3-984e-4091-9fc0-0de05a0df0c7"/>
+                  <code xsi:type="CE" code="8601-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG"/>
+                  <text><reference value="#result26"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="ST">Early LVH</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <id root="63234628-b34e-4def-b2bd-34b67b232a9e"/>
+              <code code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+              <statusCode code="completed"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <id root="31ab9312-4305-4907-a4d3-88c6d2cbaee2"/>
+                  <code xsi:type="CE" code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse Ox"/>
+                  <text><reference value="#result27"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130426"/>
+                  <value xsi:type="PQ" value="84.0" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>social History</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>History</th>
+                               <th>From</th>
+                               <th>To</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td><content ID="soc1"/>Former Smoker</td>
+                               <td>1984</td>
+                               <td>2014</td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.22.4.78"/>
+              <id root="2.16.840.1.113883.19" extension="123456789"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="1984"/>
+                <high value="2014"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="8517006" codeSystem="2.16.840.1.113883.6.96" displayName="Former Smoker"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS"/>
+          <title>VITAL SIGNS</title>
+          <text>
+                <table border="1" width="100%">
+                     <thead>
+                          <tr>
+                               <th>Date</th>
+                               <th>Height</th>
+                               <th>Weight</th>
+                               <th>Blood Pressure</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                               <td>20111101</td>
+                               <td><content ID="vit1">68 inches</content></td>
+                               <td><content ID="vit3">189 lbs</content></td>
+                               <td><content ID="vit5">132/86 mm[Hg]</content></td>
+                          </tr>
+                          <tr>
+                               <td>20120806</td>
+                               <td><content ID="vit2">68 inches</content></td>
+                               <td><content ID="vit4">194 lbs</content></td>
+                               <td><content ID="vit6">145/88 mm[Hg]</content></td>
+                          </tr>
+                     </tbody>
+                </table></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="9f8747ac-69f9-4743-8136-b9cb4d7d59d9"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED -CT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20111101"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="b4cc0ba7-d842-45d4-91cc-8df985f0664f"/>
+                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+                  <text><reference value="#vit1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111101"/>
+                  <value xsi:type="PQ" value="68.0" unit="in"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="afc33121-f459-4cea-8464-528b22ff93ea"/>
+                  <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Body Weight - Measured"/>
+                  <text><reference value="#vit2"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111101"/>
+                  <value xsi:type="PQ" value="189.0" unit="lbs"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="f1562bde-4a5e-4126-9855-c11a22dec44b"/>
+                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
+                  <text><reference value="#vit3"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20111101"/>
+                  <value xsi:type="PQ" value="132.0" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <id root="8e46e3c7-1329-40e5-bb20-10ca7a121d41"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED -CT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120806"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="8ee50399-6b76-49b0-97e8-41e5b6b27cd7"/>
+                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+                  <text><reference value="#vit4"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120806"/>
+                  <value xsi:type="PQ" value="68.0" unit="in"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="4e831e21-9073-4fe7-b06c-37f48f3adbd0"/>
+                  <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Body Weight - Measured"/>
+                  <text><reference value="#vit5"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120806"/>
+                  <value xsi:type="PQ" value="194.0" unit="lbs"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <id root="e5abb1b1-fdaa-40ee-897f-9330a9119ac0"/>
+                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
+                  <text><reference value="#vit6"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20120806"/>
+                  <value xsi:type="PQ" value="145.0" unit="mm[Hg]"/>
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
