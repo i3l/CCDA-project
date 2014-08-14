@@ -2,6 +2,7 @@ CCDA-project
 ============
 
 Content: 
+
 1. CCDA Generator v1.0
 The CCDA Generator reads predefined CSV file and outputs CCDA. Current version is fixed to the following document. Thus, when you modify the CSV file, keep in mind that you are generating Summarization of Episode Note.
 
@@ -12,5 +13,6 @@ The CCDA Generator reads predefined CSV file and outputs CCDA. Current version i
 Other document types will be supported in the later version. If you want to involve in the CCDA project, please contact at myung.choi@gtri.gatech.edu.
 
 The CCDA generator requires MDHT to compile to executable JAR file. To download runtime libraries, please visit 
+
   URL: http://sourceforge.net/projects/oht-modeling/files/Releases/Runtime/
 
