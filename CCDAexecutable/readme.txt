@@ -1,6 +1,6 @@
 USAGE: 
 
-<b>java -jar CDAgen.jar > output.xml</b>
+java -jar CDAgen.jar > output.xml
 
 This reads in default "proposed CSVformat2_4.csv" as an input CSV file. 
 If you want to use different CSV file, do as follow,
