@@ -14,9 +14,10 @@ Installation Note:
 
 CDAgen.jar is a runnable Jar file, which can be executed at the command line if you have a Java platform. 
 Please make sure if you have Java Runtime Environment is installed. Some JAVA installations do not
-configure the path to installed JAR. In this case, please add the path to a path system variable.
+configure the path to the installed JAR. In this case, please add the path to JAR file into a path system variable.
 
 Once you download ZIP frile for CCDA generator, unzip the downloaded document. Using command line tool, 
-change directory (cd) to the unziped folder. Then, follow the instruction above. Unless you are manually 
-speicifying a name for CSV file, you need to run the jar file within the same direcotry where default
-CSV file exists.
+change directory (cd) to the unziped folder. Then, follow the instruction above. 
+
+Unless you are manually providing name of the CSV file as a input variable, you need to run the JAR file within the 
+direcotry where you are running the JAR file from.
