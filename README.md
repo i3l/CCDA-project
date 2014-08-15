@@ -17,3 +17,4 @@ The CCDA generator requires MDHT to compile to executable JAR file. To download 
 
   URL: http://sourceforge.net/projects/oht-modeling/files/Releases/Runtime/
 
+To see other activities in I3L, please visit http://www.i3l.gatech.edu/
