@@ -10,14 +10,20 @@ java -jar CDAgen.jar [your_new_csv_file] > output.xml
 
 The name of output.xml also can be changed to whatever you want.
 
+
 Installation Note:
 
-CDAgen.jar is a runnable Jar file, which can be executed at the command line if you have a Java platform. 
-Please make sure if you have Java Runtime Environment is installed. Some JAVA installations do not
-configure the path to the installed JAR. In this case, please add the path to JAR file into a path system variable.
+Note: These installation instructions assume a Windows PC.  MAC users will need to interpret them for that OS.
 
-Once you download ZIP frile for CCDA generator, unzip the downloaded document. Using command line tool, 
-change directory (cd) to the unziped folder. Then, follow the instruction above. 
+CDAgen.jar is a executable JAR (Java ARchive) file, that can be run at the command line if you have the Java Runtime Environment (JRE) installed.
+First, please verify that you have the (JRE) installed by typing "java -version" at the command line. 
+If it is not installed, you can download it for free for installation at: http://java.com/en/download/index.jsp.
 
-Unless you are manually providing name of the CSV file as a input variable, you need to run the JAR file within the 
-direcotry where you are running the JAR file from.
+Note: Some JRE installations do not configure the path to the installed JRE in the Windows Environment's System variables' Path statement. 
+In this case, please add the path to your JRE directory into the Path system variable. Instructions for doing that are at:http://www.computerhope.com/issues/ch000549.htm.
+For help finding the JRE refer to this: http://stackoverflow.com/questions/3930383/jre-installation-directory-in-windows.
+
+First download the ZIP file for CCDA generator and then unzip the downloaded document. Using command line tool, 
+change directory (cd) to the folder where the generator is located. Then, follow the Usage instructions above. 
+
+Note: Unless you are manually providing the name of the CSV file (including its directory) as an input variable (e.g. "directory\your_CSV_file_name.csv"), you need to locate the CSV file in the same directory where CDAgen.jar is installed.
