@@ -17,4 +17,12 @@ The CCDA generator requires MDHT to compile to executable JAR file. To download 
 
   URL: http://sourceforge.net/projects/oht-modeling/files/Releases/Runtime/
 
+When compiling, compile this as runnable (or executable) JAR. CCDA Generator can be run at the commandline as follows,
+
+ java -jar CDAgen.jar [inputfile.csv] > output_filename.xml
+
+usage note:<br/>
+output_filename.xml is the output CCDA filename. You can change this to whatever name you want.<br/>
+[inputfile.csv] is an optional parameter. If [inputfile.csv] is not specified, then CDAgen.jar will read "proposed CSVformat2_4.csv" as a default input CSV file. "proposed CSVformat2_4.csv" is included in this package. If you want to use different csv file, then [inputfile.csv] needs to be specified with a valid path to the file. 
+
 To see other activities in I3L, please visit http://www.i3l.gatech.edu/
