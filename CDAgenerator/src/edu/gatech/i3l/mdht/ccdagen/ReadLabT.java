@@ -157,12 +157,12 @@ public class ReadLabT {
 					while ((line = br.readLine()).split(",").length != 0) {
 						String[] temp = line.split(",");
 
-						visitDate.add(temp[0]);
-						test.add(temp[1]);
-						loinc.add(temp[2]);
-						value.add(temp[3]);
-						unit.add(temp[4]);
-						shortName.add(temp[5]);
+						visitDate.add(temp[0].trim());
+						test.add(temp[1].trim());
+						loinc.add(temp[2].trim());
+						value.add(temp[3].trim());
+						unit.add(temp[4].trim());
+						shortName.add(temp[5].trim());
 						lineCount++;
 						// System.out.println(temp.length);
 						// System.out.println(visitDate.size());
